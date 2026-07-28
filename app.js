@@ -876,7 +876,7 @@ const MODULES = [
   tags: ['ASML', 'Apple', 'Wirecard'], readTime: '35 min',
   sections: [
     { id: 's22-1', title: 'ASML — het perfecte monopolie', blocks: [
-      { t:'p', html:'ASML Holding NV is 's werelds enige producent van EUV-lithografiemachines — de machines waarmee chipmakers de meest geavanceerde chips produceren. Zonder ASML geen TSMC-chips, geen Apple Silicon, geen Nvidia GPU\'s.' },
+      { t:'p', html:"ASML Holding NV is 's werelds enige producent van EUV-lithografiemachines — de machines waarmee chipmakers de meest geavanceerde chips produceren. Zonder ASML geen TSMC-chips, geen Apple Silicon, geen Nvidia GPU's." },
       { t:'h3', text:'Moat-analyse' },
       { t:'bullets', items:[
         '<strong>Technologisch monopolie:</strong> EUV is 30+ jaar R&D; geen concurrent is ook maar in de buurt. TSMC-COO: "ASML is de meest kritieke leverancier die we hebben."',
@@ -1305,8 +1305,6 @@ const BONUS_MODULES = [
 /* Combineer alle modules */
 const ALL_MODULES = [...MODULES, ...BONUS_MODULES];
 
-          ['Verhoging guidance','Business presteert beter dan verwacht','Positief signaal'],
-          ['Bevestiging guidance','On track','Neutraal'],
 /* ══════════════════════════════════════════════════════════
    STATE
 ══════════════════════════════════════════════════════════ */
