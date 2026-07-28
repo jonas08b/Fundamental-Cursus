@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentele Analyse — Verdiepende Cursus (34 modules)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="workspace">
+
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <span class="ws-icon">📈</span>
+      <div class="ws-info">
+        <span class="ws-name">Fundamentele Analyse</span>
+        <span class="ws-sub">Verdiepende cursus</span>
+      </div>
+      <button class="icon-btn" id="sidebarClose" title="Sidebar sluiten">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <div class="sidebar-search-wrap">
+      <svg class="search-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="searchInput" class="sidebar-search" placeholder="Zoek module...">
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-meta">
+        <span>Voortgang</span>
+        <span id="progressText">0 / 23</span>
+      </div>
+      <div class="progress-track"><div class="progress-bar" id="progressBar" style="width:0%"></div></div>
+    </div>
+
+    <nav id="moduleNav" class="module-nav"></nav>
+  </aside>
+
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- Main -->
+  <div class="main" id="main">
+    <header class="topbar">
+      <button class="icon-btn" id="menuBtn" title="Menu">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <div id="breadcrumb" class="breadcrumb"></div>
+      <button id="completeBtn" class="btn-complete" style="display:none">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        <span id="completeBtnText">Markeer voltooid</span>
+      </button>
+    </header>
+
+    <div class="content-scroll" id="contentScroll">
+      <article class="page" id="pageContent"></article>
+      <div class="page-nav" id="pageNav" style="display:none">
+        <button id="prevBtn" class="nav-btn" disabled>← Vorige</button>
+        <button id="nextBtn" class="nav-btn">Volgende →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOC -->
+  <aside class="toc-panel" id="tocPanel" style="display:none">
+    <div class="toc-heading">Op deze pagina</div>
+    <div id="tocList" class="toc-list"></div>
+  </aside>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>
